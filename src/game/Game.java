@@ -15,14 +15,14 @@ public class Game {
 	String [][] board=new String[10][10];
 	ArrayList<Piece> alP=new ArrayList<Piece>();
 	HashMap<String,Piece> hmP= new HashMap<String,Piece>();
-public void game() {
-	Utilitaires.draw_Board(board);
-	Utilitaires.add_Pieces_To_List(alP);
-	Utilitaires.add_Pieces_To_Board(alP,hmP, board);
-	Utilitaires.read_Board(board);
-	System.out.println(Utilitaires.get_Position(board, 1, 8));
-	Round.round(hmP, board);
+	public void game() {
+		Utilitaires.draw_Board(board);
+		Utilitaires.add_Pieces_To_List(alP);
+		Utilitaires.add_Pieces_To_Board(alP,hmP, board);
+		Utilitaires.read_Board(board);
+		System.out.println(Utilitaires.get_Position(board, 1, 8));
+		Round.round(hmP, board);
 
-	Utilitaires.read_Board(board);
-}
+		Utilitaires.read_Board(board);
+	}
 }
