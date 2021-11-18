@@ -4,35 +4,35 @@ import model.Joueur;
 import model.Piece;
 
 public class Events {
-public static void isMovable(Piece P,Joueur J) {
+	public static void isMovable(Piece P,Joueur J) {
 	
-}
-//only move if its your turn
-//move only your colours
+	}
+	//only move if its your turn
+	//move only your colours
 
 
-//mouvement event
-//move(hmP.get("PB2"), board, 3, 5);
-//{key,value}
-//{PB2,Piece}
-public static void move(Piece P,String[][] board,int x,int y) {
-board[P.getY()][P.getX()]=".";
-System.out.println("X avant changement : "+P.getX());
-System.out.println("Y avant changement : "+P.getY());
-P.setX(x);
-P.setY(y);
-System.out.println("X après changement : "+P.getX());
-System.out.println("Y après changement : "+P.getY());
-board[P.getY()][P.getX()]=P.getName();
-}
-public static void check_Moves() {
+	//mouvement event
+	//move(hmP.get("PB2"), board, 3, 5);
+	//{key,value}
+	//{PB2,Piece}
+	public static void move(Piece P,String[][] board,int x,int y) {
+	board[P.getY()][P.getX()]=".";
+	System.out.println("X avant changement : "+P.getX());
+	System.out.println("Y avant changement : "+P.getY());
+	P.setX(x);
+	P.setY(y);
+	System.out.println("X aprÃ¨s changement : "+P.getX());
+	System.out.println("Y aprÃ¨s changement : "+P.getY());
+	board[P.getY()][P.getX()]=P.getName();
+	}
+	public static void check_Moves() {
 	
-}
+	}
 	//eat event
 		//eat condtions
-			//il ya un pion après
+			//il ya un pion aprÃ¨s
 			//le pion est de couleur different
-			//la case après est vide
+			//la case aprÃ¨s est vide
 	//change turns after each play
 	//game over
 		//if player is out of pieces
